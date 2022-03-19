@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap4/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" media="screen">
@@ -32,14 +33,14 @@
                             <div class="seo-form">
                                 <p>Оставьте заявку на консультацию, <br>и мы вам перезвоним в течении 15 минут</p>
                                 <form action="#!" id="seo-form-id">
-                                    <div class="form-group one">
-                                        <input type="text" id="name" name="name" placeholder="Ваше имя">
-                                    </div>
-                                    <div class="form-group two">
-                                        <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефона">
-                                    </div>
                                     <div class="seo-form-btn">
-                                        <button type="submit" id="send-btn">получить консультацию <img src="images/tel-icon.svg" alt=""></button>
+                                        <script data-b24-form="click/38/ad65cn" data-skip-moving="true">
+                                            (function(w,d,u){
+                                            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                                            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                                            })(window,document,'https://cdn-ru.bitrix24.ru/b8090091/crm/form/loader_38.js');
+                                        </script>                                            
+                                        <button type="button" id="send-btn">получить консультацию <img src="images/tel-icon.svg" alt=""></button>
                                     </div>
                                     <p class="politic">Нажимая на кнопку, вы соглашаетесь с <a href="#!">политикой конфиденциальности данных</a></p>
                                 </form>
@@ -200,7 +201,7 @@
                                         <span class="step-num">этап 1</span>
                                         <span class="step-card-title">SEO аудит: <br>Технический анализ сайта</span>
                                       </button>
-                                      <span class="arrow">
+                                      <span class="arrow" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                         <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                         </svg>                                            
@@ -217,6 +218,11 @@
                                           <li class="list">Переадресация сайта с WWW или наоборот;</li>
                                           <li class="list">Настройка ЧПУ (человеко понятный URL);</li>
                                           <li class="list">Наличие страницы с 404 ошибкой (страницы не найдено);</li>
+                                          <li class="list">Добавление в сайт Вебмастер. Яндекс и Google Search Console;</li>
+                                          <li class="list">Присвоение сайту региона продвижения;</li>
+                                          <li class="list">Размещение счетчиков посещения на сайт Яндекс Метрика и Google Analytics;</li>
+                                          <li class="list">Создание целей в Яндекс Метрике;</li>
+                                          <li class="list">Добавление сайта в Яндекс и Google карты;</li>
                                           <li class="list">Поиск ошибок кода страниц;</li>
                                           <li class="list">Выявление ошибок структуры сайта;</li>
                                           <li class="list">Анализ контента (наличие орфографических ошибок, уникальность текста, информативность);</li>
@@ -236,7 +242,7 @@
                                         <span class="step-num">этап 2</span>
                                         <span class="step-card-title">Аудит юзабилити <br>и анализ конкурентов</span>
                                       </button>
-                                      <span class="arrow">
+                                      <span class="arrow" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                         </svg>                                            
@@ -247,16 +253,13 @@
                                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
                                     <div class="card-body">
                                       <ul>
-                                          <li class="list">Проверка сайта на санкции со стороны поисковых систем;</li>
-                                          <li class="list">Проверка файла robots.txt;</li>
-                                          <li class="list">Проверка карты сайта - sitemap (XML, HTML версия);</li>
-                                          <li class="list">Переадресация сайта с WWW или наоборот;</li>
-                                          <li class="list">Настройка ЧПУ (человеко понятный URL);</li>
-                                          <li class="list">Наличие страницы с 404 ошибкой (страницы не найдено);</li>
-                                          <li class="list">Поиск ошибок кода страниц;</li>
-                                          <li class="list">Выявление ошибок структуры сайта;</li>
-                                          <li class="list">Анализ контента (наличие орфографических ошибок, уникальность текста, информативность);</li>
-                                          <li class="list">Присутствие мобильной версии сайта (наличие ошибок и удобство использования).</li>
+                                          <li class="list">Анализ информации о компании, выявление преимуществ, специфики компании; базовый (обзорный) анализ сайта с целью выявления наличия проблем и особенностей функционала;</li>
+                                          <li class="list">Анализ сайтов конкурентов: выявление сильных и слабых сторон сайта Клиента по сравнению с его конкурентами;</li>
+                                          <li class="list">Анализ поведенческих показателей статистики сайта с целью выявления его наиболее проблемных мест (веб-аналитика);</li>
+                                          <li class="list">Проверка кроссбраузерности и кросплатформенности сайта;</li>
+                                          <li class="list">Проверка корректной работы функционала сайта, оценка его целесообразности на сайте. Выявление необходимости в добавлении функционала на сайт;</li>
+                                          <li class="list">Настройка цели «Вовлеченность посетителей Сайта»;</li>
+                                          <li class="list">Настройка цели «Конверсия посетителей в потенциальных покупателей».</li>
                                       </ul>
                                     </div>
                                   </div>
@@ -273,7 +276,7 @@
                                         <span class="step-num">этап 3</span>
                                         <span class="step-card-title">Базовые настройки <br>SEO</span>
                                       </button>
-                                      <span class="arrow">
+                                      <span class="arrow" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                         <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                         </svg>                                            
@@ -283,18 +286,9 @@
 
                                   <div id="collapseThree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionExample3">
                                     <div class="card-body">
-                                      <ul>
-                                          <li class="list">Проверка сайта на санкции со стороны поисковых систем;</li>
-                                          <li class="list">Проверка файла robots.txt;</li>
-                                          <li class="list">Проверка карты сайта - sitemap (XML, HTML версия);</li>
-                                          <li class="list">Переадресация сайта с WWW или наоборот;</li>
-                                          <li class="list">Настройка ЧПУ (человеко понятный URL);</li>
-                                          <li class="list">Наличие страницы с 404 ошибкой (страницы не найдено);</li>
-                                          <li class="list">Поиск ошибок кода страниц;</li>
-                                          <li class="list">Выявление ошибок структуры сайта;</li>
-                                          <li class="list">Анализ контента (наличие орфографических ошибок, уникальность текста, информативность);</li>
-                                          <li class="list">Присутствие мобильной версии сайта (наличие ошибок и удобство использования).</li>
-                                      </ul>
+                                        <ul>
+                                            <li class="list">Анализируем и подбираем список ключевых запросов по всему сайту. Количество продвигаемых фраз зависит от тарифа</li>
+                                        </ul>
                                     </div>
                                   </div>
                                 </div>
@@ -309,7 +303,7 @@
                                         <span class="step-num">этап 4</span>
                                         <span class="step-card-title">Семантика: сбор, <br>кластеризация ключей</span>
                                       </button>
-                                      <span class="arrow">
+                                      <span class="arrow" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                         <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                         </svg>                                            
@@ -319,18 +313,16 @@
 
                                   <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample4">
                                     <div class="card-body">
-                                      <ul>
-                                          <li class="list">Проверка сайта на санкции со стороны поисковых систем;</li>
-                                          <li class="list">Проверка файла robots.txt;</li>
-                                          <li class="list">Проверка карты сайта - sitemap (XML, HTML версия);</li>
-                                          <li class="list">Переадресация сайта с WWW или наоборот;</li>
-                                          <li class="list">Настройка ЧПУ (человеко понятный URL);</li>
-                                          <li class="list">Наличие страницы с 404 ошибкой (страницы не найдено);</li>
-                                          <li class="list">Поиск ошибок кода страниц;</li>
-                                          <li class="list">Выявление ошибок структуры сайта;</li>
-                                          <li class="list">Анализ контента (наличие орфографических ошибок, уникальность текста, информативность);</li>
-                                          <li class="list">Присутствие мобильной версии сайта (наличие ошибок и удобство использования).</li>
-                                      </ul>
+                                        <ul>
+                                            <li class="list">Изучим тематику и конкурентов;</li>
+                                            <li class="list">Выделим УТП;</li>
+                                            <li class="list">Разработаем уникальный оптимизированный текст;</li>
+                                            <li class="list">Напишем привлекательные заголовки;</li>
+                                            <li class="list">Структурируем информацию, разобьём текст на смысловые блоки, логично разместим их в имеющемся дизайне;</li>
+                                            <li class="list">Уточним информацию по ценам, доставке;</li>
+                                            <li class="list">Добавим конкретики: факты, цифры;</li>
+                                            <li class="list">Пропишем призыв к действию.</li>
+                                        </ul>
                                     </div>
                                   </div>
                                 </div>
@@ -346,7 +338,7 @@
                                         <span class="step-num">этап 5</span>
                                         <span class="step-card-title">SEO: <br>оптимизация сайта</span>
                                       </button>
-                                      <span class="arrow">
+                                      <span class="arrow" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                         <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                         </svg>                                            
@@ -357,16 +349,12 @@
                                   <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample5">
                                     <div class="card-body">
                                       <ul>
-                                          <li class="list">Проверка сайта на санкции со стороны поисковых систем;</li>
-                                          <li class="list">Проверка файла robots.txt;</li>
-                                          <li class="list">Проверка карты сайта - sitemap (XML, HTML версия);</li>
-                                          <li class="list">Переадресация сайта с WWW или наоборот;</li>
-                                          <li class="list">Настройка ЧПУ (человеко понятный URL);</li>
-                                          <li class="list">Наличие страницы с 404 ошибкой (страницы не найдено);</li>
-                                          <li class="list">Поиск ошибок кода страниц;</li>
-                                          <li class="list">Выявление ошибок структуры сайта;</li>
-                                          <li class="list">Анализ контента (наличие орфографических ошибок, уникальность текста, информативность);</li>
-                                          <li class="list">Присутствие мобильной версии сайта (наличие ошибок и удобство использования).</li>
+                                          <li class="list">Исправление ошибок сайта выявленных на этапе аудита;</li>
+                                          <li class="list">Внесение рекомендаций;</li>
+                                          <li class="list">Размещение контента на сайте;</li>
+                                          <li class="list">Оптимизация мета тегов;</li>
+                                          <li class="list">Внутренняя перелинковка;</li>
+                                          <li class="list">Оптимизация сниппетов.</li>
                                       </ul>
                                     </div>
                                   </div>
@@ -382,7 +370,7 @@
                                         <span class="step-num">этап 6</span>
                                         <span class="step-card-title">Оптимизация <br>контента</span>
                                       </button>
-                                      <span class="arrow">
+                                      <span class="arrow" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                         <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                         </svg>                                            
@@ -392,18 +380,13 @@
 
                                   <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample6">
                                     <div class="card-body">
-                                      <ul>
-                                          <li class="list">Проверка сайта на санкции со стороны поисковых систем;</li>
-                                          <li class="list">Проверка файла robots.txt;</li>
-                                          <li class="list">Проверка карты сайта - sitemap (XML, HTML версия);</li>
-                                          <li class="list">Переадресация сайта с WWW или наоборот;</li>
-                                          <li class="list">Настройка ЧПУ (человеко понятный URL);</li>
-                                          <li class="list">Наличие страницы с 404 ошибкой (страницы не найдено);</li>
-                                          <li class="list">Поиск ошибок кода страниц;</li>
-                                          <li class="list">Выявление ошибок структуры сайта;</li>
-                                          <li class="list">Анализ контента (наличие орфографических ошибок, уникальность текста, информативность);</li>
-                                          <li class="list">Присутствие мобильной версии сайта (наличие ошибок и удобство использования).</li>
-                                      </ul>
+                                        <p>Для продвижения мы используем:</p>
+                                        <ul>
+                                            <li class="list">Постоянные ссылки;</li>
+                                            <li class="list">Арендованные ссылки;</li>
+                                            <li class="list">Внутренние ссылки;</li>
+                                            <li class="list">Социальные ссылки.</li>
+                                        </ul>
                                     </div>
                                   </div>
                                 </div>
@@ -419,7 +402,7 @@
                                         <span class="step-num">этап 7</span>
                                         <span class="step-card-title">Увеличение <br>ссылочной массы</span>
                                       </button>
-                                      <span class="arrow">
+                                      <span class="arrow" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                         <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                         </svg>                                            
@@ -429,18 +412,11 @@
 
                                   <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample7">
                                     <div class="card-body">
-                                      <ul>
-                                          <li class="list">Проверка сайта на санкции со стороны поисковых систем;</li>
-                                          <li class="list">Проверка файла robots.txt;</li>
-                                          <li class="list">Проверка карты сайта - sitemap (XML, HTML версия);</li>
-                                          <li class="list">Переадресация сайта с WWW или наоборот;</li>
-                                          <li class="list">Настройка ЧПУ (человеко понятный URL);</li>
-                                          <li class="list">Наличие страницы с 404 ошибкой (страницы не найдено);</li>
-                                          <li class="list">Поиск ошибок кода страниц;</li>
-                                          <li class="list">Выявление ошибок структуры сайта;</li>
-                                          <li class="list">Анализ контента (наличие орфографических ошибок, уникальность текста, информативность);</li>
-                                          <li class="list">Присутствие мобильной версии сайта (наличие ошибок и удобство использования).</li>
-                                      </ul>
+                                        <ul>
+                                            <li class="list">Добавление посадочных страниц;</li>
+                                            <li class="list">Наполнение страниц текстами;</li>
+                                            <li class="list">Разработка полезных инструментов.</li>
+                                        </ul>
                                     </div>
                                   </div>
                                 </div>
@@ -455,7 +431,7 @@
                                         <span class="step-num">этап 8</span>
                                         <span class="step-card-title">Увеличение <br>ссылочной массы</span>
                                       </button>
-                                      <span class="arrow">
+                                      <span class="arrow" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                         <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                         </svg>            
@@ -465,18 +441,14 @@
 
                                   <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample8">
                                     <div class="card-body">
-                                      <ul>
-                                          <li class="list">Проверка сайта на санкции со стороны поисковых систем;</li>
-                                          <li class="list">Проверка файла robots.txt;</li>
-                                          <li class="list">Проверка карты сайта - sitemap (XML, HTML версия);</li>
-                                          <li class="list">Переадресация сайта с WWW или наоборот;</li>
-                                          <li class="list">Настройка ЧПУ (человеко понятный URL);</li>
-                                          <li class="list">Наличие страницы с 404 ошибкой (страницы не найдено);</li>
-                                          <li class="list">Поиск ошибок кода страниц;</li>
-                                          <li class="list">Выявление ошибок структуры сайта;</li>
-                                          <li class="list">Анализ контента (наличие орфографических ошибок, уникальность текста, информативность);</li>
-                                          <li class="list">Присутствие мобильной версии сайта (наличие ошибок и удобство использования).</li>
-                                      </ul>
+                                        <ul>
+                                            <li class="list">Мониторинг позиций по запросам;</li>
+                                            <li class="list">Корректировка контента;</li>
+                                            <li class="list">Корректировка ссылок;</li>
+                                            <li class="list">Работа над поведенческими факторами и продающими способностями сайта;</li>
+                                            <li class="list">Развитие и модернизация сайта — добавление новых функций и сервисов;</li>
+                                            <li class="list">Выявление сильных сторон конкурентов и интеграция их в проект клиента.</li>
+                                        </ul>
                                     </div>
                                   </div>
                                 </div>
@@ -513,7 +485,7 @@
                                                     <li class="list">Семантическое ядро на 8000 ключей, оптимизация мета-тегов!</li>
                                                     <li class="list">Прирост органического трафика на 200% за 6 недель. </li>
                                                 </ul>
-                                                <a href="https://uralclick.ru/projects/prodvizhenie/sayverkhot/">подробнее</a>
+                                                <a href="https://uralclick.ru/projects/prodvizhenie/alfa/">подробнее</a>
                                             </div>
 										</div>
 									</div>
@@ -521,20 +493,19 @@
 								<div class="row slide-block">
 									<div class="col-lg-5 slide-col pl-0 pr-0">
 										<div class="slide-img seo-slide-img">
-											<img src="images/seo-keys-img1.png" alt="">
+											<img src="images/seo-keys-img2.png" alt="">
 										</div>
 									</div>
 									<div class="col-lg-7 slide-col">
 										<div class="slide-right">
-											<h3>Восстановление сайта услуги  автосервиса</h3>
+											<h3>Продвижение завода по производству труб ППУ</h3>
 											<div class="slide-list">
                                                 <ul>
-                                                    <li class="list">Перенос сайта на CMS 1с Битрикс, полная техническая настройка сайта</li>
-                                                    <li class="list">Комплексный <br>SEO -аудит! </li>
-                                                    <li class="list">Семантическое ядро на 8000 ключей, оптимизация мета-тегов!</li>
-                                                    <li class="list">Прирост органического трафика на 200% за 6 недель. </li>
+                                                    <li class="list">Разработка сайта с нуля</li>
+                                                    <li class="list"> Сбор семантики и расширение каталога до 46тыс. Позиций</li>
+                                                    <li class="list">Системный рост увеличения заявок с органической выдачи  </li>
                                                 </ul>
-                                                <a href="https://uralclick.ru/projects/prodvizhenie/sayverkhot/">подробнее</a>
+                                                <a href="#!">подробнее</a>
                                             </div>
 										</div>
 									</div>
@@ -542,20 +513,20 @@
                                 <div class="row slide-block">
 									<div class="col-lg-5 slide-col pl-0 pr-0">
 										<div class="slide-img seo-slide-img">
-											<img src="images/seo-keys-img1.png" alt="">
+											<img src="images/seo-keys-img3.jpg" alt="">
 										</div>
 									</div>
 									<div class="col-lg-7 slide-col">
 										<div class="slide-right">
-											<h3>Восстановление сайта услуги  автосервиса</h3>
+											<h3>Продвижение сети салонов оптики в Екатеринбурге</h3>
 											<div class="slide-list">
                                                 <ul>
-                                                    <li class="list">Перенос сайта на CMS 1с Битрикс, полная техническая настройка сайта</li>
-                                                    <li class="list">Комплексный <br>SEO -аудит! </li>
-                                                    <li class="list">Семантическое ядро на 8000 ключей, оптимизация мета-тегов!</li>
-                                                    <li class="list">Прирост органического трафика на 200% за 6 недель. </li>
+                                                    <li class="list">Переформирована структура сайта</li>
+                                                    <li class="list">Каталог заполнен и приведен в актуальное состояние</li>
+                                                    <li class="list">Собрано более 2 000, запросов и выполнено планомерное внедрение.</li>
+                                                    <li class="list">Закуплены качественные вечные ссылки.</li>
                                                 </ul>
-                                                <a href="https://uralclick.ru/projects/prodvizhenie/sayverkhot/">подробнее</a>
+                                                <a href="https://uralclick.ru/projects/prodvizhenie/optica/">подробнее</a>
                                             </div>
 										</div>
 									</div>
@@ -563,20 +534,19 @@
                                 <div class="row slide-block">
 									<div class="col-lg-5 slide-col pl-0 pr-0">
 										<div class="slide-img seo-slide-img">
-											<img src="images/seo-keys-img1.png" alt="">
+											<img src="images/seo-keys-img4.jpg" alt="">
 										</div>
 									</div>
 									<div class="col-lg-7 slide-col">
 										<div class="slide-right">
-											<h3>Восстановление сайта услуги  автосервиса</h3>
+											<h3>Продвижение сайта Event-агенства</h3>
 											<div class="slide-list">
                                                 <ul>
-                                                    <li class="list">Перенос сайта на CMS 1с Битрикс, полная техническая настройка сайта</li>
-                                                    <li class="list">Комплексный <br>SEO -аудит! </li>
-                                                    <li class="list">Семантическое ядро на 8000 ключей, оптимизация мета-тегов!</li>
-                                                    <li class="list">Прирост органического трафика на 200% за 6 недель. </li>
+                                                    <li class="list">Проведен анализ конкурентов по Мск и обл.</li>
+                                                    <li class="list">Составлен список мер, по достижению органической выдачи за 6мес</li>
+                                                    <li class="list">Продвинули в топ-10 в Москве по запросам на тему «Организация мероприятий», «Эвент агенство»</li>
                                                 </ul>
-                                                <a href="https://uralclick.ru/projects/prodvizhenie/sayverkhot/">подробнее</a>
+                                                <a href="https://uralclick.ru/projects/prodvizhenie/7dreams/">подробнее</a>
                                             </div>
 										</div>
 									</div>
@@ -598,7 +568,9 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="our-command-item">
-                                <div class="command-img"></div>
+                                <div class="command-img">
+                                    <img src="images/commands-img1.png" alt="">
+                                </div>
                                 <div class="command-name">
                                     <h4>Алексей Сергушкин</h4>
                                     <p>Руководитель компании — создал свой бизнес, чтобы вы могли развивать свой</p>
@@ -608,7 +580,9 @@
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="our-command-item">
-                                <div class="command-img"></div>
+                                <div class="command-img">
+                                    <img src="images/commands-img2.png" alt="">
+                                </div>
                                 <div class="command-name">
                                     <h4>Андрей Бондаренко</h4>
                                     <p class="small">Руководитель проектов — наблюдает и руководит за проектами, чтобы вы могли заниматься любимым делом</p>
@@ -618,7 +592,9 @@
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="our-command-item">
-                                <div class="command-img"></div>
+                                <div class="command-img">
+                                    <img src="images/commands-img3.png" alt="">
+                                </div>
                                 <div class="command-name">
                                     <h4>Александр Островский</h4>
                                     <p>Руководитель технического отдела — руководит цифровой половиной компании</p>
@@ -628,7 +604,9 @@
                         </div>
                         <div class="col-lg-3 col-md-6 for-drop for-drop-mob">
                             <div class="our-command-item">
-                                <div class="command-img"></div>
+                                <div class="command-img">
+                                    <img src="images/commands-img4.jpg" alt="">
+                                </div>
                                 <div class="command-name">
                                     <h4>Павел Сухоцкий</h4>
                                     <p>Программист 1С-Bitrix — разрабатывает для вас платформы на 1С-Bitrix</p>
@@ -639,7 +617,9 @@
 
                         <div class="col-lg-3 col-md-6 for-drop">
                             <div class="our-command-item">
-                                <div class="command-img"></div>
+                                <div class="command-img">
+                                    <img src="images/commend-img-alex.jpeg" alt="">
+                                </div>
                                 <div class="command-name">
                                     <h4>Александр Кретинин</h4>
                                     <p>Программист Битрикс24 — настраивает  CRM системы, которые вы заслужили</p>
@@ -649,7 +629,9 @@
                         </div>
                         <div class="col-lg-3 col-md-6 for-drop">
                             <div class="our-command-item">
-                                <div class="command-img"></div>
+                                <div class="command-img">
+                                    <img src="images/commands-img5.png" alt="">
+                                </div>
                                 <div class="command-name">
                                     <h4>Рушана Хадиева</h4>
                                     <p>SEO-специалист — помогает вам победить Google и Яндекс в поисковой войне</p>
@@ -659,7 +641,9 @@
                         </div>
                         <div class="col-lg-3 col-md-6 for-drop">
                             <div class="our-command-item">
-                                <div class="command-img"></div>
+                                <div class="command-img">
+                                    <img src="images/commands-img-ekatrina.jpg" alt="">
+                                </div>
                                 <div class="command-name">
                                     <h4>Екатерина Шакурова</h4>
                                     <p>Копирайтер — пишет для вас тексты, которые продают и продвигают бизнес</p>
@@ -669,7 +653,9 @@
                         </div>
                         <div class="col-lg-3 col-md-6 for-drop">
                             <div class="our-command-item">
-                                <div class="command-img"></div>
+                                <div class="command-img">
+                                    <img src="images/commands-img-yulia.jpeg" alt="">
+                                </div>
                                 <div class="command-name">
                                     <h4>Юлия Масляницина</h4>
                                     <p>Дизайнер — создает продающий дизайн для вашего бизнеса, который отражает главные цели компании</p>
@@ -686,8 +672,7 @@
                     <div class="row video-rov">
                         <div class="col-lg-10">
                             <div class="our-command-video">
-                                <video src="#!"></video>
-                                <a href="#!" class="play-btn"><img src="images/play-icon.svg" alt=""></a>
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z2iWFuxbTHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -712,11 +697,11 @@
                             <div class="accordion" id="accordionQuestion1">
                                 <div class="card">
                                   <div class="card-header" id="question-head1">
-                                    <h2 class="mb-0">
+                                    <h2 class="mb-0 active">
                                       <button class="btn btn-block text-left q-btn" type="button" data-toggle="collapse" data-target="#collapseQuestion1" aria-expanded="true" aria-controls="collapseQuestion1">
                                         У меня уже существует свой собственный сайт. С чего будет начато SEO-продвижение и дальнейшая поддержка в вашей компании?
                                       </button>
-                                      <span class="arrow">
+                                      <span class="arrow" data-toggle="collapse" data-target="#collapseQuestion1" aria-expanded="true" aria-controls="collapseQuestion1">
                                         <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                         </svg>                                            
@@ -739,7 +724,7 @@
                                             еще подключение Яндекс.Маркета, который присутствует в «SEO-Бизнес». 
                                             Мне необходимо остановить свой выбор на пакете «SEO-Бизнес»?
                                         </button>
-                                        <span class="arrow">
+                                        <span class="arrow" data-toggle="collapse" data-target="#collapseQuestion2" aria-expanded="false" aria-controls="collapseQuestion2">
                                             <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                             </svg>                                            
@@ -749,7 +734,7 @@
                                 
                                     <div id="collapseQuestion2" class="collapse" aria-labelledby="question-head2" data-parent="#accordionQuestion1">
                                       <div class="card-body">
-                                          <p>Чтобы дать правильный ответ, нужно определиться с несколькими важными составляющими – это доскональный аудит всего сайта, оценка юзабилити и какие цели преследует ваш ресурс. Только имея полную картину, мы можем предложить план SEO-продвижения и дальнейшее сопровождение.</p>
+                                          <p>Нет. Вы можете постоянно заказывать у нас пакет «SEO-Стандарт», а решение вопроса по подключению Яндекс.Маркета возможно в индивидуальном порядке.</p>
                                       </div>
                                     </div>
                                 </div>
@@ -760,7 +745,7 @@
                                         <button class="btn btn-block text-left q-btn" type="button" data-toggle="collapse" data-target="#collapseQuestion3" aria-expanded="false" aria-controls="collapseQuestion3">
                                             Вы даете гарантии того, что спустя нескольких месяцев мой сайт выбьется в ТОПы по основным ключевым запросам?
                                         </button>
-                                        <span class="arrow">
+                                        <span class="arrow" data-toggle="collapse" data-target="#collapseQuestion3" aria-expanded="false" aria-controls="collapseQuestion3">
                                             <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                             </svg>                                            
@@ -770,7 +755,7 @@
                                 
                                     <div id="collapseQuestion3" class="collapse" aria-labelledby="question-head3" data-parent="#accordionQuestion1">
                                       <div class="card-body">
-                                          <p>Чтобы дать правильный ответ, нужно определиться с несколькими важными составляющими – это доскональный аудит всего сайта, оценка юзабилити и какие цели преследует ваш ресурс. Только имея полную картину, мы можем предложить план SEO-продвижения и дальнейшее сопровождение.</p>
+                                          <p>Самый логичный и ожидаемый вопрос от любого заказчика. С точки зрения SEO, гарантированный вывод сайта на первые позиции невозможен. Однако, всесторонний анализ сайта, устранение обнаруженных ошибок и разработка правильной стратегии обязательно улучшит позиции обслуживаемого ресурса в долгосрочной перспективе.</p>
                                       </div>
                                     </div>
                                 </div>
@@ -781,7 +766,7 @@
                                         <button class="btn btn-block text-left q-btn" type="button" data-toggle="collapse" data-target="#collapseQuestion4" aria-expanded="false" aria-controls="collapseQuestion4">
                                             Что произойдет с моим сайтом в случае прекращения сотрудничества?
                                         </button>
-                                        <span class="arrow">
+                                        <span class="arrow" data-toggle="collapse" data-target="#collapseQuestion4" aria-expanded="false" aria-controls="collapseQuestion4">
                                             <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M2 12L12.5 2L23 12" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                             </svg>                                            
@@ -791,7 +776,7 @@
                                 
                                     <div id="collapseQuestion4" class="collapse" aria-labelledby="question-head4" data-parent="#accordionQuestion1">
                                       <div class="card-body">
-                                          <p>Чтобы дать правильный ответ, нужно определиться с несколькими важными составляющими – это доскональный аудит всего сайта, оценка юзабилити и какие цели преследует ваш ресурс. Только имея полную картину, мы можем предложить план SEO-продвижения и дальнейшее сопровождение.</p>
+                                          <p>Мы никогда искусственно не «привязываем» к себе клиентов. После окончания договорных обязательств мы в обязательном порядке предоставляем всю рабочую информацию. Это может быть аккаунт на бирже арендованных ссылок, аккаунты в системах веб-аналитики, в панелях веб-мастеров и др. сервисах. Также мы оставляем рекомендации во избежание возможности «проседания» позиций в различных поисковиках.</p>
                                       </div>
                                     </div>
                                 </div>
@@ -813,15 +798,15 @@
                             <div class="comment-block">
                                 <div class="comment-head">
                                     <div class="comment-img">
-                                        <img src="images/comment-img.png" alt="">
+                                        <img src="images/comment-img1.jpg" alt="">
                                     </div>
                                     <div class="comment-name">
-                                        <h4>Иван Иванов</h4>
-                                        <p>Должность/профессия</p>
+                                        <h4>Компания "Победитель"</h4>
+                                        <p>Уважаемый Алексей Валерьевич!</p>
                                     </div>
                                 </div>
                                 <div class="comment-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sem adipiscing tempus mauris. Malesuada porttitor scelerisque convallis quam placerat malesuada ut. Ultrices vestibulum ac neque, ante convallis. Quis consequat donec augue senectus at nulla.</p>
+                                    <p>Выражаю благодарность вам и сотрудникам вашей организации, за выполнение работ по усовершенствованию нашего сайта tenderpobeda.ru <br>Отдельно хотим отметить оперативность и своевременное выполнение поставленных задач.</p>
                                 </div>
                                 <img src="images/quote-icon.png" alt="" class="quote-icon">
                             </div>
@@ -830,15 +815,15 @@
                             <div class="comment-block">
                                 <div class="comment-head">
                                     <div class="comment-img">
-                                        <img src="images/comment-img.png" alt="">
+                                        <img src="images/comment-img2.png" alt="">
                                     </div>
                                     <div class="comment-name">
-                                        <h4>Иван Иванов</h4>
-                                        <p>Должность/профессия</p>
+                                        <h4>7Dreams</h4>
+                                        <p>Благодарственное письмо.</p>
                                     </div>
                                 </div>
                                 <div class="comment-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sem adipiscing tempus mauris. Malesuada porttitor scelerisque convallis quam placerat malesuada ut. Ultrices vestibulum ac neque, ante convallis. Quis consequat donec augue senectus at nulla.</p>
+                                    <p>Event агентство "7Dreams" выражает признательность компании "УралКлик" за проведенную настройку корпоративного портала Битрикс24, а именно модуля CRM. Ваша помощь помогла освоить программу в короткий срок, а грамотное обучение персонала - сделать внедрение интересным и увлекательным. <br>Необходимые разъяснения дали понять, как сделать работу более эффективней, а детальная демонтстрация возможностей программы помогла  подобрать то, что необходимо именно вам.</p>
                                 </div>
                                 <img src="images/quote-icon.png" alt="" class="quote-icon">
                             </div>
@@ -847,15 +832,15 @@
                             <div class="comment-block">
                                 <div class="comment-head">
                                     <div class="comment-img">
-                                        <img src="images/comment-img.png" alt="">
+                                        <img src="images/comment-img3.png" alt="">
                                     </div>
                                     <div class="comment-name">
-                                        <h4>Иван Иванов</h4>
-                                        <p>Должность/профессия</p>
+                                        <h4>УралОптика</h4>
+                                        <p>С уважением, Ильиных С.В.</p>
                                     </div>
                                 </div>
                                 <div class="comment-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sem adipiscing tempus mauris. Malesuada porttitor scelerisque convallis quam placerat malesuada ut. Ultrices vestibulum ac neque, ante convallis. Quis consequat donec augue senectus at nulla.</p>
+                                    <p>Оптическая студия УралОптика, благодарит коллектив компании УралКлик, за проводимую работу на сайте нашей компании по технической поддержке и seo-оптимизации. Своевременные рекомендации и оперативные действия, позволяют удерживать существующие позиции сайта в поисковой выдаче. Кроме этого, за период проведенных работ, сайт стал визуально понятен и доступен для наших посетителей, надеемся на поддержание положительных отношений в будущем!</p>
                                 </div>
                                 <img src="images/quote-icon.png" alt="" class="quote-icon">
                             </div>
@@ -864,15 +849,15 @@
                             <div class="comment-block">
                                 <div class="comment-head">
                                     <div class="comment-img">
-                                        <img src="images/comment-img.png" alt="">
+                                        <img src="images/comment-img4.png" alt="">
                                     </div>
                                     <div class="comment-name">
-                                        <h4>Иван Иванов</h4>
-                                        <p>Должность/профессия</p>
+                                        <h4>ООО "Русбилдинг"</h4>
+                                        <p>Уважаемый Алексей Валерьевич!</p>
                                     </div>
                                 </div>
                                 <div class="comment-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sem adipiscing tempus mauris. Malesuada porttitor scelerisque convallis quam placerat malesuada ut. Ultrices vestibulum ac neque, ante convallis. Quis consequat donec augue senectus at nulla.</p>
+                                    <p>Компания ООО "Русбилдинг" выражает Вам искреннюю благодарность и признательность за оказанную помощь по настройке и наполнению сайта. В результате проведенных работ улучшились поисковые позиции, увеличилось количество входящих заявок. Ваши своевременные и грамотные консультации позволяют нам быть в курсе новейших инструментов продвижения, что положительным образом сказывается на продажах. Результатами работы довольны и надеемся на дальнейшее дружеское и плодотворное сотрудничество.</p>
                                 </div>
                                 <img src="images/quote-icon.png" alt="" class="quote-icon">
                             </div>
@@ -881,15 +866,15 @@
                             <div class="comment-block">
                                 <div class="comment-head">
                                     <div class="comment-img">
-                                        <img src="images/comment-img.png" alt="">
+                                        <img src="images/comment-img5.png" alt="">
                                     </div>
                                     <div class="comment-name">
-                                        <h4>Иван Иванов</h4>
-                                        <p>Должность/профессия</p>
+                                        <h4>ComfortHouse</h4>
+                                        <p>Уважаемый Алексей Валерьевич! </p>
                                     </div>
                                 </div>
                                 <div class="comment-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sem adipiscing tempus mauris. Malesuada porttitor scelerisque convallis quam placerat malesuada ut. Ultrices vestibulum ac neque, ante convallis. Quis consequat donec augue senectus at nulla.</p>
+                                    <p>ООО "Сити Трейд" благодарит вас за помощь в создании сайта и составлении квиз-лендинга для нашей компании.Сжатые сроки выполнения работ позволили своевременно запустить рекламную компанию, а дополнительные рекомендации - сохранить расходы на создание сайта и избежать оплаты за хостинг услуги. Надеемся на долгосрочное сотрудничество с вами в будущем.</p>
                                 </div>
                                 <img src="images/quote-icon.png" alt="" class="quote-icon">
                             </div>
@@ -898,15 +883,16 @@
                             <div class="comment-block">
                                 <div class="comment-head">
                                     <div class="comment-img">
-                                        <img src="images/comment-img.png" alt="">
+                                        <img src="images/comment-img6.jpg" alt="">
                                     </div>
                                     <div class="comment-name">
-                                        <h4>Иван Иванов</h4>
-                                        <p>Должность/профессия</p>
+                                        <h4>E-Лайм</h4>
+                                        <p>Уважаемый Алексей Валерьевич!</p>
                                     </div>
                                 </div>
                                 <div class="comment-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sem adipiscing tempus mauris. Malesuada porttitor scelerisque convallis quam placerat malesuada ut. Ultrices vestibulum ac neque, ante convallis. Quis consequat donec augue senectus at nulla.</p>
+                                    <p>IT-агенство "Е-Лайм", выражает вам благодарность за комплексный подход при настройке CRM-системы "Битрикс24".
+                                        Отмечаем ваш профессионализм и терпение при выполнении поставленных задач. Ваша оперативная помощь, тех.поддержка помогли быстро разобраться в возможных настройках и ускорить процесс изучения "Битрикс24". Надеемся на взаимовыгодное сотрудничество и поддержание рабочих отношений.</p>
                                 </div>
                                 <img src="images/quote-icon.png" alt="" class="quote-icon">
                             </div>
@@ -1037,16 +1023,12 @@
                                 <h3>Оставьте свой номер телефона <br>и наш специалист свяжется с Вами</h3>
                                 <p>Введите свои данные и получите консультацию</p>
                                 <form action="#!" id="footer-form-form">
-                                    <div class="form-group">
-                                        <input type="text" id="name" name="name" placeholder="Ваше имя">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефона">
-                                    </div>
-                                    <div class="seo-form-btn">
-                                        <button type="submit" id="send-btn">получить консультацию <img src="images/tel-icon.svg" alt=""></button>
-                                    </div>
-                                    <p class="politic">Нажимая на кнопку, вы соглашаетесь с <a href="#!">политикой конфиденциальности данных</a></p>
+                                    <script data-b24-form="inline/38/ad65cn" data-skip-moving="true">
+                                        (function(w,d,u){
+                                        var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                                        var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                                        })(window,document,'https://cdn-ru.bitrix24.ru/b8090091/crm/form/loader_38.js');
+                                    </script>                                        
                                 </form>
                             </div>
                         </div>

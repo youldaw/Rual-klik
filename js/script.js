@@ -95,9 +95,13 @@ $(function (){
         e.preventDefault();
         $(this).parent().toggleClass('active');
     });
-    $('.q-btn').on('click',function(e){
+    $('.q-btn, .arrow').on('click',function(e){
         e.preventDefault();
         $(this).parent().toggleClass('active');
+    });
+    $('.card-header .arrow').on('click',function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
     });
     
 
