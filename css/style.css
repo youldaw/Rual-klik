@@ -1287,6 +1287,7 @@ ul .list::after,
 	justify-content: center;
 	border-top: 3px solid #E23530;
 	border-bottom: 3px solid transparent;
+	cursor: pointer;
 }
 
 .seo-steps .accordion .card-header h2 .arrow.active {
@@ -1528,6 +1529,7 @@ ul .list::after,
 	justify-content: center;
 	border-top: 3px solid #E23530;
 	border-bottom: 3px solid transparent;
+	cursor: pointer;
 }
 
 .question-sec .accordion .card-header h2 .arrow {
@@ -2086,6 +2088,7 @@ ul .list::after,
 
 
 .only-mob,
+.for-tab-img,
 .for-mob-img,
 .for-tab,
 .mob-icon,
@@ -2103,6 +2106,111 @@ ul .list::after,
 
 
 @media only screen and (max-width: 992px){
+	.for-drop.active {
+		display: block;
+	}
+	.comments-sec .comment-block .comment-head .comment-img {
+		height: auto;
+	}
+	.keys-sec .slide-block .slide-right .slide-list a {
+		height: 80px;
+		width: 340px;
+		margin: 0 auto 115px;
+	}
+	.seo-slide-sec .seo-price .seo-price-rate .rate-title ul li {
+		margin-bottom: 20px;
+	}
+	.seo-steps .seo-steps-img {
+		margin-bottom: 50px;
+	}
+	.seo-steps .title {
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.seo-price .seo-price-rate {
+		height: 463px;
+	}
+	.seo-price .seo-price-rate .rate-price {
+		width: 100%;
+	}
+	.seo-price .seo-price-rate .rate-price a {
+		font-size: 12px;
+		padding: 5px 10px;
+		height: 47px;
+		border-bottom: 2px solid #E23732;
+		width: 100%;
+		justify-content: center;
+	}
+	.seo-price .seo-price-rate .rate-price h3 {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.seo-price .seo-price-rate .rate-title ul li::after {
+		top: 5px;
+	}
+	.seo-price .seo-price-rate .rate-title ul li {
+		font-size: 14px;
+		padding-left: 15px;
+		margin-bottom: 10px;
+	}
+	.seo-price .seo-price-rate {
+		padding: 0 15px 24px;
+	}
+	.seo-price .seo-price-rate .rate-title h3 {
+		font-size: 22px;
+		line-height: 25px;
+		margin: 20px 0;
+	}
+	.seo-price .seo-price-rate .rate-img img {
+		width: 140px;
+	}
+	.seo-price {
+		padding-top: 90px;
+	}
+	.seo-business .seo-business-img img {
+		object-fit: cover;
+		height: 380px;
+	}
+	.seo-business .seo-business-text p {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	.seo-business .seo-business-text:nth-child(2) p {
+		margin-bottom: 40px;
+	}
+	.seo-business h2 {
+		margin-bottom: 35px;
+	}
+	.seo-business {
+		padding-top: 100px;
+	}
+	.seo-main {
+		padding: 70px 0 90px;
+	}
+	.seo-main .seo-form > p {
+		font-size: 20px;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.seo-main .seo-main-block h2 {
+		font-size: 35px;
+		margin-bottom: 40px;
+		width: 575px;
+	}
+	.seo-main .seo-main-block h2 br {
+		display: none;
+	}
+	.seo-main .seo-main-block h1 {
+		margin-left: 0;
+		line-height: 1;
+		height: 49px;
+		font-size: 25px;
+		width: 126px;
+		margin-bottom: 17px;
+	}
+	.seo-main .seo-main-block {
+		text-align: left;
+	}
 	.footer-form form p.politic {
 		width: 360px;
 	}
@@ -2124,10 +2232,11 @@ ul .list::after,
 	}
 	.footer-form .footer-form-img img {
 		height: auto;
-		right: -12%;
+		right: -7%;
 	}
+	.for-mob-img,
 	.for-pc-img {display: none;}
-	.for-mob-img {display: block;}
+	.for-tab-img {display: block;}
 	.comments-sec .comment-block .comment-body p {
 		font-size: 15px;
 		line-height: 1.2;
@@ -2157,9 +2266,6 @@ ul .list::after,
 		font-size: 16px;
 		margin-top: 35px;
 	}
-	.question-sec .question-card button {
-		font-size: 22px;
-	}
 	.question-sec .question-img img {
 		height: auto;
 	}
@@ -2172,6 +2278,7 @@ ul .list::after,
 	}
 	.seo-slide-sec .title p {
 		width: auto;
+		margin-top: 10px;
 	}
 	.seo-steps .accordion .step-card-title {
 		font-size: 26px;
@@ -2193,31 +2300,33 @@ ul .list::after,
 	}
 	.seo-info .seo-info-block .seo-info-item {
 		padding-left: 50px;
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 	}
 	.seo-price-col:last-child {
 		margin-bottom: 0;
 	}
 	.seo-price-col {
-		margin-bottom: 150px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.seo-main .seo-form form .form-group.two input {
 		margin-right: 0;
 	}
 	.seo-main .seo-form form p.politic,
 	.seo-main .seo-form form input {
-		width: 270px;
+		width: 275px;
 	}
 	.seo-main .seo-form form .seo-form-btn button {
 		margin: 15px 0;
 	}
 	.seo-main .seo-form form {
 		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
 	}
 	/* //////////// */
-	.keys-sec .slide-block {
-		height: auto;
-	}
+	
 	.development-info .info-text .tab-line,
 	.for-pc-and-mob,
 	.pc {display: none;}
@@ -2290,7 +2399,7 @@ ul .list::after,
 		width: 85%;
 	}
 	.title h2 {
-		font-size: 32px;
+		font-size: 35px;
 		line-height: 40px;
 	}
 	.cms-sec .title p {
@@ -2469,12 +2578,23 @@ ul .list::after,
 	}
 	.keys-sec .slide-block {
 		flex-direction: column;
+		height: auto;
 	}
+	.keys-sec .slide-block .slide-right {
+		height: 460px;
+	}
+	.keys-sec .slide-block .slide-right .slide-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+	
 	.keys-sec .keys-slide .owl-nav button.owl-next {
-		right: 30px;
+		right: 25%;
 	}
 	.keys-sec .keys-slide .owl-nav button.owl-prev {
-		left: 30px;
+		left: 25%;
 	}
 	.keys-sec .keys-slide .owl-nav button {
 		top: auto;
@@ -2693,9 +2813,6 @@ ul .list::after,
 	.bitrix-slide-sec .bitrix-slide-text p:last-child {
 		margin-bottom: 20px;
 	}
-	.question-sec {
-		padding: 50px 0 80px;
-	}
 	.question-sec .question-img .question-icon1,
 	.question-sec .question-img .question-icon-green1 {
 		font-size: 50px;
@@ -2715,6 +2832,7 @@ ul .list::after,
 	}
 	.question-sec .question-card button {
 		width: 80%;
+		font-size: 18px;
 	}
 	.question-sec .question-card .card {
 		margin-bottom: 25px;
@@ -2734,10 +2852,11 @@ ul .list::after,
 		z-index: 4;
 	}
 	.seo-slide-sec.keys-sec .keys-slide-block {
-		padding-bottom: 80px;
+		padding-bottom: 120px;
 	}
 	.seo-slide-sec.keys-sec .keys-slide .owl-dots {
-		bottom: 9px;
+		bottom: 17px;
+		left: 0;
 	}
 	.seo-slide-sec {
 		padding-top: 80px;
@@ -2749,7 +2868,7 @@ ul .list::after,
 		padding: 30px 0 0;
 	}
 	.our-command {
-		padding-top: 100px;
+		padding-top: 120px;
 	}
 	.our-command .our-command-item .command-img {
 		height: 400px;
@@ -2790,10 +2909,24 @@ ul .list::after,
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.comments-sec {
-		padding: 50px 0;
-	}
 	.only-mob {display: none;}
+	.our-command .title p br {
+		display: none;
+	}
+	.question-sec .title > h2 {
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.question-sec {
+		padding: 120px 0;
+	}
+	.comments-sec {
+		padding-top: 0;
+	}
+	.footer-form .form-rov {
+		padding: 85px 0 100px;
+	}
 }
 
 
@@ -2823,6 +2956,95 @@ ul .list::after,
 
 
 @media only screen and (max-width: 480px) {
+	.for-tab-img,
+	.for-pc-img {display: none;}
+	.for-mob-img {display: block;}
+	.seo-steps .accordion .card-header button .step-num {
+		font-size: 12px;
+		line-height: 12px;
+		margin-bottom: 15px;
+	}
+	.seo-steps .accordion .step-card-title br {
+		display: none;
+	}
+	.seo-steps .accordion .step-card-title {
+		white-space: normal;
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 20px;
+	}
+	.seo-steps .accordion .card-header button {
+		width: 70%;
+	}
+	.seo-steps .accordion .card {
+		padding: 22px 20px;
+		margin-bottom: 15px;
+	}
+	.seo-info .seo-info-block .seo-info-item p {
+		font-size: 20px !important;
+		margin-top: 20px;
+	}
+	.seo-info .seo-info-block .seo-info-item {
+		padding-left: 25px !important;
+		margin-bottom: 70px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.seo-price .seo-price-rate {
+		height: auto;
+	}
+	.seo-price-col {
+		margin-bottom: 120px;
+	}
+	.seo-price .seo-price-rate .rate-title h3 {
+		font-size: 27px;
+		margin: 35px 0 20px;
+	}
+	.seo-price .seo-price-rate .rate-img img {
+		width: 230px;
+	}
+	.seo-price .title {
+		margin-bottom: 125px;
+	}
+	.title h2 {
+		font-size: 30px;
+	}
+	.seo-main .seo-form form .seo-form-btn button {
+		width: 100%;
+		margin: 0;
+		justify-content: center;
+	}
+	.seo-main .seo-form .seo-form-btn {
+		width: 100%;
+	}
+	.seo-main .seo-main-block h2 {
+		font-size: 30px;
+	}
+	.seo-main .container > .row > .col-lg-12 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.seo-main {
+		height: 100vh;
+		padding: 60px 0 30px;
+	}
+	.seo-main > .container > .row,
+	.seo-main > .container {
+		height: 100%;
+	}
+	.seo-main .seo-form {
+		margin-top: auto;
+	}
+	.seo-main .seo-form form p.politic,
+	.seo-main .seo-form > p {
+		display: none;
+	}
+	.bitrix-main .bitrix-main-block h1,
+	.question-sec .title > h2,
+	.seo-main .seo-main-block h2 {
+		width: auto;
+	}
 	.footer-form .footer-form-block h3 {
 		width: auto;
 	}
@@ -2920,9 +3142,9 @@ ul .list::after,
 	.development-sec .dev-right .card .card-header h2 button {
 		font-size: 20px;
 	}
-	p {
+	/* p {
 		font-size: 14px !important;
-	}
+	} */
 	.cms-sec .nav-pills {
 		width: auto;
 	}
@@ -2990,7 +3212,7 @@ ul .list::after,
 		font-size: 22px;
 	}
 	.keys-sec .slide-block .slide-img img {
-		height: 250px;
+		height: 200px;
 	}
 	.keys-sec .slide-block .slide-righ,
 	.keys-sec .slide-block .slide-img {
@@ -3015,7 +3237,7 @@ ul .list::after,
 		margin-top: 30px;
 	}
 	.keys-sec .keys-slide .owl-nav button img {
-		height: 40px;
+		height: 50px;
 	}
 	.keys-sec .keys-slide .owl-dots button {
 		width: 12px;
@@ -3106,7 +3328,7 @@ ul .list::after,
 		align-items: center;
 		justify-content: center;
 		position: absolute;
-		bottom: 15px;
+		bottom: 22px;
 		left: 7px;
 		right: 0;
 		margin-left: auto;
@@ -3122,6 +3344,7 @@ ul .list::after,
 		cursor: pointer;
 		margin-right: 30px;
 		background: transparent;
+		margin-right: 20px;
 	}
 	.comment-slide .owl-dots button:last-child {
 		margin-right: 0;
@@ -3130,5 +3353,91 @@ ul .list::after,
 		background: #FF4F4A;
 	}
 	/* ================================ */
-	
+	.seo-steps .accordion .card-header h2 .arrow {
+		min-width: 45px;
+		height: 45px;
+	}
+	.seo-slide-sec {
+		padding-top: 65px;
+		padding-bottom: 65px;
+		position: relative;
+	}
+	.keys-sec .slide-block .slide-right {
+		padding: 120px 20px 30px 30px;
+	}
+	.keys-sec .slide-block .slide-right .slide-list a {
+		width: 90%;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		right: 0;
+		height: 55px;
+		z-index: 2;
+	}
+	.keys-sec .slide-block .slide-right {
+		height: 600px;
+		position: relative;
+	}
+	.seo-slide-sec.keys-sec .keys-slide-block {
+		padding-bottom: 0;
+		position: unset;
+	}
+	.seo-slide-sec.keys-sec .keys-slide .owl-nav button,
+	.bitrix-slide-sec.keys-sec .keys-slide .owl-nav button {
+		top: -5%;
+	}
+	.keys-sec .keys-slide .owl-nav button.owl-next {
+		right: 25px;
+	}
+	.keys-sec .keys-slide .owl-nav button.owl-prev {
+		left: 25px;
+	}
+	.keys-sec .slide-block .slide-right .slide-list {
+		display: block;
+		height: auto;
+	}
+	.our-command .our-command-item .command-name a,
+	.our-command .our-command-item .command-name h4 {
+		font-size: 26px;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+	.our-command .our-command-item .command-name p {
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.our-command .show-btn {
+		text-decoration: none;
+	}
+	.our-command .show-btn:hover {
+		text-decoration: none;
+	}
+	.question-sec {
+		padding: 90px 0;
+	}
+	.question-sec .title {
+		margin-bottom: 50px;
+	}
+	.question-sec .question-card .card {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+	.question-sec .question-card .card:last-child {
+		margin-bottom: 0;
+	}
+	.comment-slide .owl-nav button img {
+		height: 55px;
+	}
+	.comments-sec .title {
+		margin-bottom: 40px;
+	}
+	.comments-sec.only-mob {
+		padding: 0 0 90px;
+	}
+	.footer-form .footer-form-block h3 {
+		font-size: 20px;
+		line-height: 26px;
+		margin-bottom: 35px;
+	}
 }

@@ -103,6 +103,10 @@ $(function (){
         e.preventDefault();
         $(this).toggleClass('active');
     });
+    $('.show-all.mob .show-btn').on('click',function(e){
+        e.preventDefault();
+        $('.for-drop').toggleClass('active');
+    });
     
 
     $('.nav-pills .nav-item').on('click',function(e){
