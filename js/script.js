@@ -82,6 +82,33 @@ $(function (){
     });
 
 
+    $('.platform-slide').owlCarousel({
+        loop:false,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:0,
+        nav:true,
+        dots:true,
+        center: false,
+        smartSpeed:900,
+        items:1,
+        navText: ['<img src="images/slide-arrow-right-blue.svg">','<img src="images/slide-arrow-right-blue.svg">'],
+        responsive:{
+            0:{
+                items:1,
+            },
+            768:{
+                items:1,
+                margin:0,
+            },
+            992:{
+                items:1,
+                margin:0,
+            }
+        }
+    });
+
+
     $('.step-btn').on('click',function(e){
         e.preventDefault();
         $(this).parent().toggleClass('active');

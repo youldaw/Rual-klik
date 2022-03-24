@@ -678,7 +678,7 @@ button, img {
 	background: #F7F7F7;
 	border-radius: 20px;
 	overflow: hidden;
-	height: 558px;
+	height: 450px;
 }
 .keys-sec .slide-block .slide-img,
 .keys-sec .slide-block .slide-right {
@@ -1826,6 +1826,8 @@ ul .list::after,
 }
 .bitrix-main .bitrix-main-img img {
 	width: 110%;
+	object-fit: cover;
+	mix-blend-mode: multiply;
 }
 
 /* ====================== */
@@ -1915,6 +1917,7 @@ ul .list::after,
 	color: #7B7B7B;
 	margin-bottom: 30px;
 }
+.bonus-sec .bonus-left-link a,
 .bonus-sec .bonus-right .bonus-right-text a {
 	font-weight: 700;
 	line-height: 20px;
@@ -1932,6 +1935,7 @@ ul .list::after,
 	border-bottom: 4px solid #008673;
 	font-size: 12px;
 }
+.bonus-sec .bonus-left-link a:hover,
 .bonus-sec .bonus-right .bonus-right-text a:hover {
 	border-color: transparent;
 }
@@ -1958,7 +1962,7 @@ ul .list::after,
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	height: 700px;
+	height: 650px;
 }
 .bitrix-form .bitrix-form-block {
 	text-align: center;
@@ -1976,29 +1980,29 @@ ul .list::after,
 .platform-sec .nav-pills .nav-link {
 	justify-content: center;
 }
-.platform-sec .tab-content .platform-block {
+.platform-sec .platform-block {
 	display: flex;
 	align-items: flex-start;
 	padding: 0 20px;
 }
-.platform-sec .tab-content .platform-block span {
+.platform-sec .platform-block span {
 	display: inline-block;
 	margin-right: 25px;
 }
-.platform-sec .tab-content .platform-block p {
+.platform-sec .platform-block p {
 	font-weight: 400;
 	font-size: 23px;
 	line-height: 120%;
 	letter-spacing: 0.01em;
 	color: #343434;
 }
-.platform-sec .tab-content .red-block {
+.platform-sec .red-block {
 	background: #FF4F4A;
 	border-radius: 20px;
 	padding: 35px 40px;
 	margin: 60px 20px 0;
 }
-.platform-sec .tab-content .red-block p {
+.platform-sec .red-block p {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 130%;
@@ -2014,7 +2018,8 @@ ul .list::after,
 }
 .keys-sec .slide-block .bitrix-slide-img img {
 	height: auto;
-	width: auto;
+	width: 100%;
+	mix-blend-mode: multiply;
 }
 .bitrix-slide-sec .title h2 span {
 	color: #00A68F;
@@ -2086,7 +2091,7 @@ ul .list::after,
 
 
 
-
+.bonus-sec .bonus-left-link a,
 .only-mob,
 .for-tab-img,
 .for-mob-img,
@@ -2106,6 +2111,17 @@ ul .list::after,
 
 
 @media only screen and (max-width: 992px){
+	.platform-in-title h3 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 141%;
+		color: #005B8B;
+		margin-bottom: 16px;
+		text-align: center;
+	}
+	.bonus-sec .bonus-left-link a {
+		display: flex;
+	}
 	.for-drop.active {
 		display: block;
 	}
@@ -2262,10 +2278,7 @@ ul .list::after,
 	.our-command .our-command-video {
 		height: 400px;
 	}
-	.question-sec .question-card p {
-		font-size: 16px;
-		margin-top: 35px;
-	}
+	
 	.question-sec .question-img img {
 		height: auto;
 	}
@@ -2437,6 +2450,10 @@ ul .list::after,
     }
     .cms-sec .nav-pills.yes {
         height: 441px;
+        transition: .4s all ease;
+    }
+	.platform-sec.cms-sec .nav-pills.yes {
+        height: 315px;
         transition: .4s all ease;
     }
     .cms-sec .nav-pills {
@@ -2660,7 +2677,7 @@ ul .list::after,
 		height: 24px;
 	}
 	.bitrix-main .bitrix-main-img img {
-		width: 50%;
+		width: 80%;
 	}
 	.bitrix-main .bitrix-main-img {
 		margin: 40px 0;
@@ -2681,12 +2698,15 @@ ul .list::after,
 	}
 	.bonus-sec .title h2 {
 		text-align: center;
+		width: 440px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.bonus-sec .bonus-img {
 		margin: 28px 0 16px;
 	}
 	.bonus-sec .bonus-img img {
-		height: 137px;
+		height: 195px;
 	}
 	.bonus-left-col {
 		order: 2;
@@ -2703,7 +2723,13 @@ ul .list::after,
 		margin-top: 10px;
 	}
 	.bonus-sec .bonus-right .bonus-right-text a {
-		margin-bottom: 50px;
+		display: none;
+	}
+	.bonus-sec .bonus-left-link a {
+		margin-top: 35px;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.bonus-sec .bonus-left h3 {
 		font-size: 24px;
@@ -2717,6 +2743,9 @@ ul .list::after,
 	.bonus-sec .bonus-left .bonus-arrow {
 		display: none;
 	}
+	.bonus-sec .bonus-right .warning-block {
+		margin-bottom: 27px;
+	}
 	.bitrix-form {
 		padding: 50px 0 0;
 	}
@@ -2724,7 +2753,7 @@ ul .list::after,
 		font-size: 28px;
 	}
 	.bitrix-form .bitrix-rov {
-		padding: 60px 0 500px;
+		padding: 60px 0 100px;
 	}
 	.bitrix-form .bitrix-form-block h3 {
 		font-size: 24px;
@@ -2746,30 +2775,33 @@ ul .list::after,
 		text-align: center;
 	}
 	.bitrix-form .bitrix-rov .bitrix-img img {
-		height: 500px;
+		height: 630px;
+		left: -4%;
 	}
 	.platform-sec {
-		padding: 60px 0;
+		padding: 90px 0 60px 0;
 	}
-	.platform-sec .tab-content .platform-block {
+	.platform-sec .platform-block {
 		padding: 0;
 	}
-	.platform-sec .tab-content .platform-block span {
+	.platform-sec .platform-block span {
 		margin-right: 15px;
 	}
-	.platform-sec .tab-content .platform-block span img {
+	.platform-sec .platform-block span img {
 		height: 25px;
 	}
-	.platform-sec .tab-content .red-block {
+	.platform-sec .red-block {
 		padding: 15px 20px;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	.bitrix-slide-sec {
-		padding-top: 60px;
+		padding-top: 90px;
 	}
 	.bitrix-slide-sec .title p {
 		width: auto;
+		font-size: 16px;
+		line-height: 136.19%;
 	}
 	.keys-sec .slide-block .seo-slide-img,
 	.bitrix-slide-sec.keys-sec .slide-block .bitrix-slide-img {
@@ -2784,7 +2816,7 @@ ul .list::after,
 	.seo-slide-sec.keys-sec .keys-slide .owl-nav button,
 	.bitrix-slide-sec.keys-sec .keys-slide .owl-nav button {
 		top: auto;
-		bottom: -4px;
+		bottom: -30px;
 		z-index: 4;
 	}
 	.bitrix-slide-sec.keys-sec .keys-slide-block {
@@ -2792,26 +2824,34 @@ ul .list::after,
 	}
 
 	.bitrix-slide-sec.keys-sec .slide-block .slide-right h3 {
-		font-size: 20px;
-		margin-bottom: 20px;
+		font-weight: 400;
+		font-size: 35px;
+		line-height: 141%;
 		text-align: center;
-		font-weight: 500;
 	}
 	.bitrix-slide-sec.keys-sec .slide-block .slide-right {
-		padding: 20px;
+		padding: 20px 40px;
+		height: 370px;
 	}
 	.bitrix-slide-sec .slide-right .slide-list ul li {
-		font-size: 16px;
+		font-weight: 300;
+		font-size: 21px;
+		line-height: 146.69%;
 	}
 	.bitrix-slide-sec.keys-sec .slide-block .bitrix-slide-img {
 		padding: 40px 0;
 	}
 	.bitrix-slide-sec.keys-sec .keys-slide .owl-dots {
-		bottom: 14px;
-    	left: 15px;
+		bottom: -8px;
+		left: 10px;
 	}
 	.bitrix-slide-sec .bitrix-slide-text p:last-child {
 		margin-bottom: 20px;
+	}
+	.bitrix-slide-sec.keys-sec .slide-block .slide-img img {
+		height: 389px;
+		object-fit: contain;
+		margin-left: 50px;
 	}
 	.question-sec .question-img .question-icon1,
 	.question-sec .question-img .question-icon-green1 {
@@ -2840,6 +2880,11 @@ ul .list::after,
 	}
 	.question-sec .question-card p {
 		margin-top: 25px;
+		font-size: 16px;
+		margin-top: 35px;
+	}
+	.question-sec.bitrix-question .question-card p {
+		font-size: 20px;
 	}
 	/* seo */
 	.seo-steps .seo-steps-img img {
@@ -2927,11 +2972,114 @@ ul .list::after,
 	.footer-form .form-rov {
 		padding: 85px 0 100px;
 	}
+	.bonus-sec .bonus-left h4,
+	.bonus-sec .bonus-left ul {
+		padding: 0 100px;
+	}
+	.bonus-sec {
+		padding-bottom: 120px;
+	}
+	.no-pos {
+		position: unset;
+	}
+	/* ////////// */
+	.platform-sec .platform-slide {
+		position: relative;
+		padding-bottom: 100px;
+	}
+	.platform-sec .platform-slide .owl-nav button {
+		position: absolute;
+		bottom: 0;
+		border: none;
+		background: transparent;
+		padding: 0;
+		cursor: pointer;
+	}
+	.platform-sec .platform-slide .owl-nav button.disabled {
+		opacity: 0.5;
+	}
+	.platform-sec .platform-slide .owl-nav button.owl-prev {
+		left: 15%;
+		transform: rotate(180deg);
+	}
+	.platform-sec .platform-slide .owl-nav button.owl-next {
+		right: 15%;
+	}
+	.platform-sec .platform-slide .owl-nav button img {
+		height: 60px;
+	}
+	.platform-sec .platform-slide .owl-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	.platform-sec .platform-slide .owl-dots button {
+		border: 1px solid #FF4F4A;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		padding: 0;
+		cursor: pointer;
+		margin-right: 30px;
+		background: transparent;
+	}
+	.platform-sec .platform-slide .owl-dots button:last-child {
+		margin-right: 0;
+	}
+	.platform-sec .platform-slide .owl-dots button.active {
+		background: #FF4F4A;
+	}
+	.platform-sec .platform-block p {
+		font-size: 20px;
+		line-height: 164.19%;
+		letter-spacing: 0.01em;
+	}
+	.platform-sec .title {
+		margin-bottom: 20px;
+	}
+	.platform-sec .red-block {
+		margin-top: 30px;
+	}
+	.platform-sec .red-block p {
+		font-size: 20px;
+		line-height: 166.69%;
+		letter-spacing: 0.01em;
+	}
+	.bitrix-slide-sec .bitrix-slide-text {
+		margin-bottom: 80px;
+	}
+	.bitrix-slide-sec .bitrix-slide-text p {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 151.69%;
+	}
+	.question-sec {
+		padding-top: 0;
+	}
+	.question-sec .question-img {
+		margin-bottom: 75px;
+	}
+	.question-sec.bitrix-question .question-card button {
+		font-size: 25px;
+	}
 }
 
 
 
 @media only screen and (max-width: 767px) {
+	.bonus-sec .bonus-left-link a {
+		width: 100%;
+	}
+	.bonus-sec .bonus-left h4, .bonus-sec .bonus-left ul {
+		padding: 0;
+	}
 	.footer-form .form-rov {
 		padding-top: 50px;
 		padding-bottom: 470px;
@@ -3439,5 +3587,221 @@ ul .list::after,
 		font-size: 20px;
 		line-height: 26px;
 		margin-bottom: 35px;
+	}
+	.bitrix-main .bitrix-main-block h1 {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 32px;
+		text-align: center;
+		color: #434343;
+		margin-bottom: 16px;
+	}
+	.bitrix-main .bitrix-main-block > a {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 122.99%;
+		width: 64%;
+		margin-bottom: 35px;
+	}
+	.bitrix-main .bitrix-main-block > a img {
+		height: 30px;
+	}
+	.bitrix-main .bitrix-main-img img {
+		width: 100%;
+	}
+	.bitrix-main .bitrix-main-img {
+		margin-bottom: 16px;
+	}
+	.bitrix-main .bitrix-main-block .bitrix-main-btns p {
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+	.bitrix-main .bitrix-main-block .bitrix-main-btns.one {
+		margin-bottom: 30px;
+	}
+	.bitrix-main .bitrix-main-block .bitrix-main-btns.two span,
+	.bitrix-main .bitrix-main-block .bitrix-main-btns.one a{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.bitrix-main {
+		padding: 50px 0 100px;
+	}
+	.bonus-sec .title h2 {
+		width: auto;
+	}
+	.bonus-sec {
+		padding: 90px 0 60px;
+	}
+	.title h2 {
+		font-size: 28px;
+	}
+	.bonus-sec .bonus-img img {
+		height: 137px;
+	}
+	.bonus-sec .bonus-right .warning-block span.span-text {
+		font-size: 14px;
+		line-height: 16px;
+		display: inline-block;
+		margin-top: 8px;
+	}
+	.bonus-sec .bonus-right .warning-block {
+		margin-bottom: 60px;
+	}
+	.bonus-sec .bonus-right .bonus-right-text p {
+		margin: 0 0 60px;
+	}
+	.bonus-sec .bonus-left h3 {
+		font-size: 20px;
+	}
+	.bonus-sec .bonus-left ul {
+		margin-top: 25px;
+		padding: 0 38px;
+	}
+	.bonus-sec .bonus-left ul li {
+		padding-left: 20px;
+		margin-bottom: 25px;
+	}
+	.bonus-sec .bonus-left h4 {
+		font-size: 20px;
+	}
+	.bonus-sec .bonus-left-link a {
+		margin-top: 16px;
+		white-space: normal;
+		text-align: center;
+	}
+	.bitrix-form .title h2 {
+		font-size: 26px;
+		line-height: 33px;
+	}
+	.bitrix-form {
+		padding: 50px 0 475px;
+		position: relative;
+	}
+	.bitrix-form .bitrix-rov .bitrix-img img {
+		height: auto;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.bitrix-form .bitrix-rov {
+		position: unset;
+	}
+	.platform-sec {
+		padding: 60px 0 80px;
+	}
+	.cms-sec .title h2 {
+		font-size: 30px;
+		line-height: 34px;
+		margin-bottom: 36px;
+	}
+	.platform-sec .title {
+		margin-bottom: 0;
+	}
+	.platform-sec .platform-block p {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.platform-sec .red-block p {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 166.69%;
+		letter-spacing: 0.01em;
+	}
+	.platform-sec .platform-slide .owl-nav button {
+		z-index: 2;
+	}
+	.platform-sec .platform-slide .owl-nav button img {
+		height: 50px;
+	}
+	.platform-sec .platform-slide .owl-dots {
+		bottom: 16px;
+		left: 8px;
+	}
+	.platform-sec .platform-slide .owl-dots button {
+		margin-right: 20px;
+	}
+	.keys-sec .title {
+		font-size: 30px;
+		line-height: 34px;
+		margin-bottom: 35px;
+	}
+	.bitrix-slide-sec .title p {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 137.69%;
+		margin-top: 9px;
+	}
+	.bitrix-slide-sec.keys-sec .slide-block .slide-img img {
+		height: 265px;
+	}
+	.bitrix-slide-sec.keys-sec .keys-slide .owl-nav button {
+		top: auto;
+	}
+	.bitrix-slide-sec.keys-sec .slide-block .slide-right h3 {
+		margin: -20px 0 11px;
+		font-size: 24px;
+		line-height: 33px;
+	}
+	.bitrix-slide-sec .slide-right .slide-list ul li {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 133.69%;
+		letter-spacing: 0.01em;
+	}
+	.keys-sec.bitrix-slide-sec  .slide-block .slide-right {
+		height: 290px;
+		padding: 20px;
+		overflow: hidden;
+	}
+	.bitrix-slide-sec.keys-sec .keys-slide-block {
+		padding-bottom: 70px;
+	}
+	.bitrix-slide-sec .bitrix-slide-text p {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 151.69%;
+	}
+	.bitrix-slide-sec .bitrix-slide-text {
+		margin-bottom: 0;
+	}
+	.question-sec.bitrix-question .title h2 {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 34px;
+	}
+	.question-sec .question-img .question-icon-green1 {
+		font-size: 25px;
+		line-height: 130%;
+		top: -15px;
+		left: 70px;
+	}
+	.question-sec .question-img img {
+		height: 196px;
+		object-fit: cover;
+	}
+	.question-sec .question-img .question-icon-green2 {
+		font-size: 40px;
+		line-height: 138.19%;
+		letter-spacing: 0.5em;
+		top: 80px;
+    	right: -13px;
+	}
+	.question-sec .question-img .question-icon-green3 {
+		font-size: 70px;
+		line-height: 138.19%;
+		left: 110px;
+    	bottom: -43px;
+	}
+	.question-sec.bitrix-question .question-card button {
+		font-size: 19px;
+		line-height: 149.19%;
+	}
+	.question-sec.bitrix-question .question-card p {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 149.19%;
+		margin-top: 20px;
 	}
 }
