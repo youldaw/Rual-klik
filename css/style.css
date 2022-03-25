@@ -1288,6 +1288,8 @@ ul .list::after,
 	border-top: 3px solid #E23530;
 	border-bottom: 3px solid transparent;
 	cursor: pointer;
+	position: relative;
+	z-index: 2;
 }
 
 .seo-steps .accordion .card-header h2 .arrow.active {
@@ -1308,6 +1310,7 @@ ul .list::after,
 	display: flex;
 	flex-direction: column;
 	padding: 0;
+	white-space: inherit;
 }
 .seo-steps .accordion .card-header button .step-num {
 	font-weight: 700;
@@ -1487,6 +1490,7 @@ ul .list::after,
 	border: none;
 	width: 90%;
 	cursor: pointer;
+	padding: 45px 0;
 }
 
 .question-sec .question-card p {
@@ -1494,7 +1498,7 @@ ul .list::after,
 	font-size: 22px;
 	line-height: 130%;
 	color: #757575;
-	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .question-sec .question-card .card-header,
 .question-sec .question-card .card-body {
@@ -1507,8 +1511,9 @@ ul .list::after,
 	border-radius: 0;
 	border: none;
 	border-bottom: 1px solid #b7b7b7;
-	margin-bottom: 45px;
-	padding-bottom: 45px;
+}
+.question-sec .question-card .card:first-child{
+	margin-top: -45px;
 }
 .btn.focus, .btn:focus {
 	box-shadow: none;
@@ -1530,6 +1535,7 @@ ul .list::after,
 	border-top: 3px solid #E23530;
 	border-bottom: 3px solid transparent;
 	cursor: pointer;
+	margin-top: 45px;
 }
 
 .question-sec .accordion .card-header h2 .arrow {
@@ -1715,6 +1721,9 @@ ul .list::after,
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+}
+.keys-sec.seo-slide-sec .slide-block .seo-slide-img img {
+	height: 202px;
 }
 .keys-sec .slide-block .slide-right .slide-list a {
 	background: linear-gradient(91.45deg, #005B8B -3.45%, #278EC5 52.13%, #005B8B 103.2%);
@@ -2873,15 +2882,11 @@ ul .list::after,
 	.question-sec .question-card button {
 		width: 80%;
 		font-size: 18px;
-	}
-	.question-sec .question-card .card {
-		margin-bottom: 25px;
-		padding-bottom: 25px;
+		padding: 35px 0;
 	}
 	.question-sec .question-card p {
-		margin-top: 25px;
 		font-size: 16px;
-		margin-top: 35px;
+		margin-bottom: 35px;
 	}
 	.question-sec.bitrix-question .question-card p {
 		font-size: 20px;
@@ -2994,6 +2999,7 @@ ul .list::after,
 		background: transparent;
 		padding: 0;
 		cursor: pointer;
+		z-index: 2;
 	}
 	.platform-sec .platform-slide .owl-nav button.disabled {
 		opacity: 0.5;
@@ -3014,7 +3020,7 @@ ul .list::after,
 		justify-content: center;
 		position: absolute;
 		bottom: 20px;
-		left: 20px;
+		left: 10px;
 		right: 0;
 		margin-left: auto;
 		margin-right: auto;
@@ -3168,21 +3174,8 @@ ul .list::after,
 	.seo-main .seo-main-block h2 {
 		font-size: 30px;
 	}
-	.seo-main .container > .row > .col-lg-12 {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
 	.seo-main {
-		height: 100vh;
-		padding: 60px 0 30px;
-	}
-	.seo-main > .container > .row,
-	.seo-main > .container {
-		height: 100%;
-	}
-	.seo-main .seo-form {
-		margin-top: auto;
+		padding: 60px 0 90px;
 	}
 	.seo-main .seo-form form p.politic,
 	.seo-main .seo-form > p {
@@ -3393,7 +3386,7 @@ ul .list::after,
 	}
 	.keys-sec .keys-slide .owl-nav button {
 		bottom: auto;
-		top: 200px;
+		top: 240px;
 	}
 	.keys-sec .slide-block {
 		background: transparent;
@@ -3524,16 +3517,25 @@ ul .list::after,
 		z-index: 2;
 	}
 	.keys-sec .slide-block .slide-right {
+		height: 700px;
+		position: relative;
+	}
+	.keys-sec.bitrix-slide-sec .slide-block .slide-right {
 		height: 600px;
 		position: relative;
+	}
+	.seo-slide-sec.keys-sec .slide-block .slide-right {
+		height: 550px;
 	}
 	.seo-slide-sec.keys-sec .keys-slide-block {
 		padding-bottom: 0;
 		position: unset;
 	}
-	.seo-slide-sec.keys-sec .keys-slide .owl-nav button,
 	.bitrix-slide-sec.keys-sec .keys-slide .owl-nav button {
 		top: -5%;
+	}
+	.seo-slide-sec.keys-sec .keys-slide .owl-nav button {
+		top: 2%;
 	}
 	.keys-sec .keys-slide .owl-nav button.owl-next {
 		right: 25px;
@@ -3566,13 +3568,6 @@ ul .list::after,
 	}
 	.question-sec .title {
 		margin-bottom: 50px;
-	}
-	.question-sec .question-card .card {
-		padding-bottom: 40px;
-		margin-bottom: 40px;
-	}
-	.question-sec .question-card .card:last-child {
-		margin-bottom: 0;
 	}
 	.comment-slide .owl-nav button img {
 		height: 55px;
@@ -3712,12 +3707,21 @@ ul .list::after,
 	.platform-sec .platform-slide .owl-nav button {
 		z-index: 2;
 	}
+	.platform-sec .platform-slide .owl-nav button.owl-next {
+		right: 15px;
+	}
+	.platform-sec .platform-slide .owl-nav button.owl-prev {
+		left: 15px;
+	}
 	.platform-sec .platform-slide .owl-nav button img {
 		height: 50px;
 	}
 	.platform-sec .platform-slide .owl-dots {
 		bottom: 16px;
-		left: 8px;
+		left: 0;
+	}
+	.platform-sec .red-block {
+		margin-top: 50px;
 	}
 	.platform-sec .platform-slide .owl-dots button {
 		margin-right: 20px;
@@ -3802,6 +3806,5 @@ ul .list::after,
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 149.19%;
-		margin-top: 20px;
 	}
 }
